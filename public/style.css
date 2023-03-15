@@ -1,0 +1,30 @@
+.pagination a {
+    text-decoration: none;
+}
+
+.pagination a:hover {
+    background: #0056b3 !important;
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+p.no_data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    font-size: 20px;
+    color: red;
+    font-weight: 600;
+    text-shadow: 0 0 black;
+}
+
+.hidden {
+    display: none
+}
+
+td.name_with_hover a {
+    text-decoration: none;
+    font-weight: 900;
+}
