@@ -40,9 +40,11 @@
                                     <tr>
                                         <td>{{ $single_data->id }}</td>
                                         <td class="name_with_hover">
-                                            {{ $single_data->getUser($single_data->attendees_one_id)->name }} </a></td>
+                                            {{ optional($single_data->getUser($single_data->attendees_one_id))->name }} </a>
+                                        </td>
                                         <td style="max-width: 200px;">
-                                            {{ $single_data->getUser($single_data->attendees_two_id)->name }}</td>
+                                            {{ $single_data->getUser($single_data->attendees_two_id)->name ?? 'Naveed' }}
+                                        </td>
                                         <td>{{ $single_data->meeting_time }}</td>
                                         <td> <a href="{{ url('/all-data/edit/') }}/{{ $single_data->id }}"
                                                 class="btn btn-success">edit</a></td>
@@ -54,7 +56,7 @@
                                 </tbody>
                             @endforeach
                         @else
-                            <p class="no_data"> Your searching DATA is not avaiable </p>
+                            <p class="no_data"> DATA is not avaiable </p>
                         @endif
                     </table>
                     <div class="pagination float-end">

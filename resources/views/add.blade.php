@@ -67,26 +67,6 @@
                                                 </div>
                                             </div>
 
-                                            {{-- <div class="row mb-3">
-                                                <label for="attendee_type"
-                                                    class="col-md-4 col-form-label text-md-end">{{ __('Attendee Type') }}</label>
-
-                                                <div class="col-md-6">
-                                                    <select class="form-select" name="attendee_type"
-                                                        aria-label="Default select example">
-                                                        <option selected>Attendee Type</option>
-                                                        <option value="Attendee Type 1">Attendee Type 1</option>
-                                                        <option value="Attendee Type 2">Attendee Type 2</option>
-                                                    </select>
-
-                                                    @error('attendee_type')
-                                                        <span class="invalid-feedback" role="alert">
-                                                            <strong>{{ $message }}</strong>
-                                                        </span>
-                                                    @enderror
-                                                </div>
-                                            </div> --}}
-
 
                                             <div class="row mb-3">
                                                 <label for="datetime"

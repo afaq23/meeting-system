@@ -21,10 +21,9 @@ class MeetingController extends Controller
     public function adding_data(Request $request)
     {
         $attendee = new meetings();
-        $attendee->attendees_one_id = $request['attendee_type'];
-        $attendee->attendees_two_id = $request['attendee_type'];
+        $attendee->attendees_one_id = $request['attendee_one_id'];
+        $attendee->attendees_two_id = $request['attendee_two_id'];
         $attendee->meeting_time = $request['datetime'];
-
         $attendee->save();
         return back();
     }
